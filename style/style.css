@@ -1,0 +1,201 @@
+
+/* STYLING */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  font-size: 1em;
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-weight: 100;
+  background: #c1d4e0;
+  color: #5e7080;
+  cursor: url("https://s3-us-west-2.amazonaws.com/materialist-images/assets/light_copy.png"), default;
+}
+.app {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 26em;
+  height: 45em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  box-shadow: 0 1rem 5rem -2rem rgba(0,0,0,0.8);
+  background: #fff;
+  cursor: url("https://s3-us-west-2.amazonaws.com/materialist-images/assets/dark_copy.png"), default;
+  box-shadow: 0 4em 12em -2rem rgba(0,0,0,0.25);
+}
+.nav {
+  position: relative;
+  width: 100%;
+  height: 6em;
+}
+.back-icon,
+.more-icon {
+  height: 2em;
+  width: 2em;
+  opacity: 0.5;
+  padding: 2em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.back-icon:hover,
+.more-icon:hover {
+  opacity: 1;
+}
+.back-icon {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+}
+.more-icon {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+}
+.title {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 2rem;
+  width: 8em;
+  line-height: 2rem;
+  text-align: center;
+  color: #5e7080;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-weight: 300;
+  font-size: 1.25em;
+  padding: 2rem 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  letter-spacing: 1px;
+}
+.content {
+  position: relative;
+  width: calc(100% - 4em);
+  height: 23em;
+  padding: 0 2em 2em 2em;
+}
+.scale-container {
+  position: relative;
+  width: 100%;
+  height: 22em;
+  overflow: hidden;
+  margin: 0 0 1em 0;
+}
+#image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin: 0 0 2em 0;
+  overflow: hidden;
+}
+#image:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.toggle {
+  position: relative;
+  margin: 2em 1em 0 0;
+  width: 100%;
+  height: 1em;
+  margin: 0 0 2em 0;
+}
+.variable {
+  position: relative;
+  display: inline-block;
+  margin: 0 0.5em 0 0;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  background: #456;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0.5;
+}
+.variable:hover {
+  opacity: 1;
+}
+.variable-active {
+  opacity: 1;
+}
+#var1 {
+  background: #d6ebdc;
+}
+#var2 {
+  background: #c5c3d2;
+}
+#variable-title {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 1em;
+  font-weight: 300;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  letter-spacing: 1px;
+}
+.description {
+  position: relative;
+  width: 100%;
+  height: 6em;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  line-height: 1.5em;
+  margin: 0 0 1em 0;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+.add-button {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #e0cee2;
+  width: 100%;
+  height: 4em;
+  line-height: 4em;
+  text-align: center;
+  color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  cursor: url("https://s3-us-west-2.amazonaws.com/materialist-images/assets/light_copy.png"), default;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.add-button:hover {
+  background: #cfb3d2;
+}
+@media (max-width: 24em) {
+  .app {
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+  }
+}
